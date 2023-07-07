@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CarteleraComponent } from './components/cartelera/cartelera.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarteleraComponent
   ],
   imports: [
     BrowserModule,

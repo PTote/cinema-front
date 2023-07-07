@@ -1,0 +1,26 @@
+.cartelera-images{
+  outline: 1px red solid;
+  width: auto;
+  display: flex;
+  overflow: scroll;
+  max-width: 300px
+}
+
+#tster{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.div-img:hover{
+cursor: pointer;
+}
+
+.div-img{
+  width: 100px;
+  height: 100px;
+}
+
+img{
+  width: 100%;
+}
