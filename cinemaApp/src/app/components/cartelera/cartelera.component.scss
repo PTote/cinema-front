@@ -1,26 +1,35 @@
-.cartelera-images{
+.container-cartelera {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: 1px red solid;
+}
+
+#imagenes {
   outline: 1px red solid;
   width: auto;
   display: flex;
-  overflow: scroll;
-  max-width: 300px
+  max-width: 275px;
+  overflow: hidden;
 }
 
-#tster{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
 
-.div-img:hover{
-cursor: pointer;
-}
 
-.div-img{
-  width: 100px;
-  height: 100px;
-}
-
-img{
+img {
   width: 100%;
+  // margin-right: 5px;
+}
+
+
+.arrow-left {
+  outline: 1px green solid;
+  top: 50%;
+  font-size: 30px;
+}
+
+.arrow-right {
+  outline: 1px green solid;
+  top: 50%;
+  font-size: 30px;
+  right: 0;
 }

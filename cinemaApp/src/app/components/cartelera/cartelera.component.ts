@@ -19,7 +19,7 @@ export class CarteleraComponent implements OnInit {
 
     if(container !== null){
       container.style.backgroundColor = 'blue'
-      container.scrollLeft -=300;
+      container.scrollLeft -=275;
 
     }
 
@@ -30,7 +30,7 @@ export class CarteleraComponent implements OnInit {
 
     if(container !== null){
       container.style.backgroundColor = 'green'
-      container.scrollLeft +=300;
+      container.scrollLeft +=275;
     }
 
   }
