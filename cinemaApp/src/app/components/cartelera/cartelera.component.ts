@@ -15,7 +15,7 @@ export class CarteleraComponent implements OnInit {
   }
 
   leftControl(){
-    const container: HTMLElement | null  = document.getElementById('imagenes')
+    const container: HTMLElement | null  = document.getElementById('product-container')
 
     if(container !== null){
       container.style.backgroundColor = 'blue'
@@ -26,7 +26,7 @@ export class CarteleraComponent implements OnInit {
   }
 
   rightControl(){
-    const container: HTMLElement | null  = document.getElementById('imagenes')
+    const container: HTMLElement | null  = document.getElementById('product-container')
 
     if(container !== null){
       container.style.backgroundColor = 'green'
