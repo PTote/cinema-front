@@ -1,0 +1,27 @@
+.body-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-header-container{
+  padding: 20px;
+}
+
+.cartelera{
+  width: 100%;
+  max-width: 1320px;
+}
+
+::ng-deep.app-cartelera .container-cartelera{
+  width: auto;
+  outline: 1px red solid;
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .image-header-container {
+    display: none;
+  }
+}
