@@ -1,7 +1,6 @@
 <div class="home-container">
-
   <section class="menu-options">
-  <app-navbar></app-navbar>
+    <app-navbar></app-navbar>
   </section>
 
   <section class="body-home">
@@ -10,9 +9,17 @@
     </div>
 
     <div class="cartelera">
-      <app-cartelera></app-cartelera>
+        <h2 class="title-container">En cartelera</h2>
+      <div class="cartelera-container">
+        <app-cartelera></app-cartelera>
+      </div>
+    </div>
+
+    <div class="cartelera" name="estrenos">
+      <h2 class="title-container">Proximamente</h2>
+      <div class="cartelera-container">
+        <app-cartelera></app-cartelera>
+      </div>
     </div>
   </section>
-
-
 </div>
