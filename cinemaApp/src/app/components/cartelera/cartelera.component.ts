@@ -14,23 +14,20 @@ export class CarteleraComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  leftControl(){
-    const container: HTMLElement | null  = document.getElementById('product-container')
+  leftControl() {
+    const container: HTMLElement | null = document.getElementById('product-container')
 
-    if(container !== null){
-      container.style.backgroundColor = 'blue'
-      container.scrollLeft -=275;
-
+    if (container !== null) {
+      container.scrollLeft -= 275;
     }
 
   }
 
-  rightControl(){
-    const container: HTMLElement | null  = document.getElementById('product-container')
+  rightControl() {
+    const container: HTMLElement | null = document.getElementById('product-container')
 
-    if(container !== null){
-      container.style.backgroundColor = 'green'
-      container.scrollLeft +=275;
+    if (container !== null) {
+      container.scrollLeft += 275;
     }
 
   }
