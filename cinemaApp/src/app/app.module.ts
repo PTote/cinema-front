@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { SessionComponent } from './pages/session/session.component';
 import { ImageHeaderComponent } from './components/image-header/image-header.component';
 import { AutomaticSliderComponent } from './components/automatic-slider/automatic-slider.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AutomaticSliderComponent } from './components/automatic-slider/automati
     ContactComponent,
     SessionComponent,
     ImageHeaderComponent,
-    AutomaticSliderComponent
+    AutomaticSliderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
