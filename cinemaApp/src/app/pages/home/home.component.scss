@@ -24,6 +24,23 @@
   left: 19px;
 }
 
+#button-form{
+  width: 100px;
+    height: 25px;
+    background: #0B1320;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+#button-form:hover{
+  background-color: #B5BA03;;
+}
+
+#button-form.clicked{
+  background-color: #B5BA03;;
+}
+
 
 @media screen and (max-width: 767px) {
   .body-home {
@@ -37,11 +54,9 @@
   .filters {
     width: 100%;
     max-width: 533px;
-    outline: 1px blue solid;
   }
 
   #container-form-filter {
-    outline: 1px red solid;
     width: 100%;
   }
 
@@ -66,11 +81,9 @@
   .filters {
     width: 100%;
     max-width: 533px;
-    outline: 1px blue solid;
   }
 
   #container-form-filter {
-    outline: 1px red solid;
     width: 100%;
   }
 
