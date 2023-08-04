@@ -3,3 +3,9 @@ export interface IMovieData {
   title: string;
   image: string;
 }
+
+export interface IUbicationsCinema {
+  id:            number;
+  ubication:     string;
+  cinemaName: string[];
+}
