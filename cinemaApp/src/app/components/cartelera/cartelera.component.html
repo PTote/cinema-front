@@ -1,114 +1,31 @@
 <div class="container-carrusel">
-  <span class="pre-btn">
-    <i class="bi bi-arrow-left-short" (click)="leftControl()"></i>
-  </span>
-
-  <div class="movies-container" id="product-container">
-    <div class="movie-card">
-      <div class="movie-image">
-        <img src="assets/images/spiderman-2.jpg" alt="" class="product-thumb" />
-        <button class="card-btn">More info</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
-      </div>
+  <div class="pre-btn">
+    <div class="container-arrow">
+      <i
+        class="bi bi-arrow-left-short carrusel-arrow"
+        (click)="leftControl()"
+      ></i>
     </div>
+  </div>
 
-    <div class="movie-card">
+  <div class="movies-container" id={{nameContainer}}>
+    <div class="movie-card" *ngFor="let movie of arrMovies">
       <div class="movie-image">
-        <img src="assets/images/batman.jpg" alt="" class="product-thumb" />
-        <button class="card-btn">More info</button>
+        <img [src]="movie.image" alt="movie.title" class="product-thumb" />
+        <button class="card-btn">Más información</button>
       </div>
       <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
-      </div>
-    </div>
-
-    <div class="movie-card">
-      <div class="movie-image">
-        <img
-          src="assets/images/dogtown-boys.jpg"
-          alt=""
-          class="product-thumb"
-        />
-        <button class="card-btn">More info</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
-      </div>
-    </div>
-
-    <div class="movie-card">
-      <div class="movie-image">
-        <img src="assets/images/the-doors.jpg" alt="" class="product-thumb" />
-        <button class="card-btn">More info</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
-      </div>
-    </div>
-
-    <div class="movie-card">
-      <div class="movie-image">
-        <img
-          src="assets/images/the-exorcist.jpg"
-          alt=""
-          class="product-thumb"
-        />
-        <button class="card-btn">More info</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
-      </div>
-    </div>
-
-    <div class="movie-card">
-      <div class="movie-image">
-        <img
-          src="assets/images/trainspotting.jpg"
-          alt=""
-          class="product-thumb"
-        />
-        <button class="card-btn">More info</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
-      </div>
-    </div>
-
-    <div class="movie-card">
-      <div class="movie-image">
-        <img src="assets/images/wolwerine.jpg" alt="" class="product-thumb" />
-        <button class="card-btn">More info</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">brand</h2>
-        <p class="movie-description">a shot line about the product</p>
-        <span class="price">$20</span>
-        <span class="actual-price">$40</span>
+        <h2 class="movie-title">{{ movie.title }}</h2>
       </div>
     </div>
   </div>
 
-  <span class="nxt-btn">
-    <i class="bi bi-arrow-right-short" (click)="rightControl()"></i>
-  </span>
+  <div class="nxt-btn">
+    <div class="container-arrow">
+      <i
+        class="bi bi-arrow-right-short carrusel-arrow"
+        (click)="rightControl()"
+      ></i>
+    </div>
+  </div>
 </div>

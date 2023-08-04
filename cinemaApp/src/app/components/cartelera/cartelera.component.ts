@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IMovieData } from 'src/app/models/interface-data.interface';
 
 @Component({
   selector: 'app-cartelera',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarteleraComponent implements OnInit {
 
-
+  @Input() arrMovies: IMovieData[] = [];
+  @Input() nameContainer: string = '';
 
   constructor() { }
 
@@ -15,7 +17,10 @@ export class CarteleraComponent implements OnInit {
   }
 
   leftControl() {
-    const container: HTMLElement | null = document.getElementById('product-container')
+
+    console.log(this.nameContainer);
+
+    const container: HTMLElement | null = document.getElementById(this.nameContainer)
 
     if (container !== null) {
       container.scrollLeft -= 275;
@@ -24,7 +29,7 @@ export class CarteleraComponent implements OnInit {
   }
 
   rightControl() {
-    const container: HTMLElement | null = document.getElementById('product-container')
+    const container: HTMLElement | null = document.getElementById(this.nameContainer)
 
     if (container !== null) {
       container.scrollLeft += 275;

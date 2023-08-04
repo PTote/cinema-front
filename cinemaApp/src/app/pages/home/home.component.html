@@ -9,14 +9,14 @@
     </div>
 
     <div class="filters">
-      <h2>Busqueda avanzada</h2>
+      <h2>Búsqueda avanzada</h2>
       <div id="container-form-filter">
         <form action="" class="form-filter">
           <label for="ubications" id="label-ubications">Por ubicación de cine</label>
           <select name="ubications" id="select-ubications" class="form-elements select">
             <option value="">Guatemala</option>
             <option value="">Quetzaltenango</option>
-            <option value="">Péten</option>
+            <option value="">Petén</option>
           </select>
           <label for="form-elements" id="label-name">Por nombre de película</label>
           <input type="text" id="input-name" placeholder="Busca una película..." class="form-elements input">
@@ -30,14 +30,14 @@
     <div class="cartelera">
         <h2 class="title-container">En cartelera</h2>
       <div class="cartelera-container">
-        <app-cartelera></app-cartelera>
+        <app-cartelera [arrMovies] = 'billboard' [nameContainer]="'billboardContainer'"></app-cartelera>
       </div>
     </div>
 
     <div class="cartelera" name="estrenos">
-      <h2 class="title-container">Proximamente</h2>
+      <h2 class="title-container">Próximamente</h2>
       <div class="cartelera-container">
-        <app-cartelera></app-cartelera>
+        <app-cartelera [arrMovies] = 'coomingSoon' [nameContainer]="'coomingSoonContainer'"></app-cartelera>
       </div>
     </div>
   </section>
