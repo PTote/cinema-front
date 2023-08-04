@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Barbie",
+    "image": "assets/images/barbie.jpg"
+  },
+  {
+    "id": 2,
+    "title": "OppenHeimer",
+    "image": "assets/images/oppenheimer.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Pink Floyd",
+    "image": "assets/images/pink-floyd.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Reyes de las olas",
+    "image": "assets/images/reyes-olas.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Fight Club",
+    "image": "assets/images/fight-club.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Fear and Loathing in Las Vegas",
+    "image": "assets/images/fear-loathing-vegas.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Sangre, Sudor y Gloria",
+    "image": "assets/images/sudor-gloria.jpg"
+  },
+  {
+    "id": 8,
+    "title": "El vuelo",
+    "image": "assets/images/el-vuelo.jpg"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Spider-Man",
+    "image": "assets/images/spiderman-2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Batman",
+    "image": "assets/images/batman.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Dogtown Boys",
+    "image": "assets/images/dogtown-boys.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Doors",
+    "image": "assets/images/the-doors.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Exorcist",
+    "image": "assets/images/the-exorcist.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Trainspotting",
+    "image": "assets/images/trainspotting.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Wolwerine",
+    "image": "assets/images/wolwerine.jpg"
+  }
+]
