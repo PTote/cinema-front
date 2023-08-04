@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
         break;
 
       default:
-        this.cineName = ['Error al obtener cine']
+        this.cineName = ['Selecciona un cine']
         break;
     }
 
