@@ -12,39 +12,68 @@
       <h2>Búsqueda avanzada</h2>
       <div id="container-form-filter">
         <form action="" class="form-filter">
-          <label for="ubications" id="label-ubications">Elige tu ubicación</label>
-          <select name="ubications" id="select-ubications" class="form-elements select">
-            <option value="">Guatemala</option>
-            <option value="">Quetzaltenango</option>
-            <option value="">Petén</option>
+          <label for="ubications" id="label-ubications"
+            >Elige tu ubicación</label
+          >
+          <select
+            name="ubications"
+            id="select-ubications"
+            class="form-elements select"
+            [(ngModel)]="cineUbication"
+            (change)="selectUbications()"
+          >
+            <option value="">Selecciona una ubicación</option>
+            <option *ngFor="let cine of cinemaData" [value]="cine.id">
+              {{ cine.ubication }}
+            </option>
           </select>
-          <label for="ubications" id="label-cine">Elige tu cine</label>
-          <select name="ubications" id="select-cine" class="form-elements select">
-            <option value="">Miraflores</option>
-            <option value="">Capitols</option>
-            <option value="">Oakland</option>
-            <option value="">Américas</option>
+          <label for="cine-name" id="label-cine">Elige tu cine</label>
+          <select
+            name="cine-name"
+            id="select-cine"
+            class="form-elements select"
+            [disabled]="cineNameActive"
+          >
+            <option value="" disabled selected>Selecciona un cine</option>
+            <option
+              *ngFor="let cine of cineName; let i = index"
+              [value]="i + 1"
+            >
+              {{ cine }}
+            </option>
           </select>
           <label for="form-elements" id="label-name">Elige tu película</label>
-          <input type="text" id="input-name" placeholder="Busca una película..." class="form-elements input">
+          <input
+            type="text"
+            id="input-name"
+            placeholder="Busca una película..."
+            class="form-elements input"
+          />
           <div id="div-spacer"></div>
-          <button type="submit" class="form-elements button" id="button-form">Buscar</button>
+          <button type="submit" class="form-elements button" id="button-form">
+            Buscar
+          </button>
         </form>
       </div>
-
     </div>
 
     <div class="cartelera">
-        <h2 class="title-container">En cartelera</h2>
+      <h2 class="title-container">En cartelera</h2>
       <div class="cartelera-container">
-        <app-cartelera [arrMovies] = 'billboard' [nameContainer]="'billboardContainer'"></app-cartelera>
+        <app-cartelera
+          [arrMovies]="billboard"
+          [nameContainer]="'billboardContainer'"
+        ></app-cartelera>
       </div>
     </div>
 
     <div class="cartelera" name="estrenos">
       <h2 class="title-container">Próximamente</h2>
       <div class="cartelera-container">
-        <app-cartelera [arrMovies] = 'coomingSoon' [nameContainer]="'coomingSoonContainer'"></app-cartelera>
+        <app-cartelera
+          [arrMovies]="coomingSoon"
+          [nameContainer]="'coomingSoonContainer'"
+        ></app-cartelera>
       </div>
     </div>
   </div>
