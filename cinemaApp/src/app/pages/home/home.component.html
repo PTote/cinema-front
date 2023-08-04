@@ -30,14 +30,14 @@
     <div class="cartelera">
         <h2 class="title-container">En cartelera</h2>
       <div class="cartelera-container">
-        <app-cartelera></app-cartelera>
+        <app-cartelera [arrMovies] = 'billboard' [nameContainer]="'billboardContainer'"></app-cartelera>
       </div>
     </div>
 
     <div class="cartelera" name="estrenos">
       <h2 class="title-container">Proximamente</h2>
       <div class="cartelera-container">
-        <app-cartelera></app-cartelera>
+        <app-cartelera [arrMovies] = 'coomingSoon' [nameContainer]="'coomingSoonContainer'"></app-cartelera>
       </div>
     </div>
   </section>
