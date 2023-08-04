@@ -6,12 +6,16 @@
   box-sizing: border-box;
 }
 
+.navbar-container {
+  position: relative;
+}
+
 body {
   font-family: monospace;
 }
 
 nav {
-  background: #0082e6;
+  background: #0B1320;
   height: 80px;
   width: 100%;
 }
@@ -22,6 +26,17 @@ nav {
   line-height: 80px;
   padding: 0 0 0 10px;
   font-weight: bold;
+}
+
+.logoGuateCine {
+  position: absolute;
+  width: 200px;
+  top: 5px;
+  left: 10px;
+}
+
+#logoNavbar {
+  width: 100%;
 }
 
 nav ul {
@@ -43,10 +58,8 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-a.active,
-a:hover {
-  background: #1B9BFF;
-  transition: .5s;
+nav ul li a:hover {
+  color: yellow;
 }
 
 .checkbtn {
@@ -103,11 +116,11 @@ a:hover {
 
   a:hover,
   a.active {
-    background: none;
-    color: #0082e6;
+    // background: none;
+    color: yellow;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 
