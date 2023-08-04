@@ -1,32 +1,27 @@
-.body-home{
+.body-home {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.image-header-container{
-  padding: 20px;
+.image-header-container {
+  padding: 0 20px 20px 20px;
 }
 
-.cartelera{
+.cartelera {
   width: 100%;
 }
 
-.cartelera-container{
+.cartelera-container {
   padding: 20px;
 }
 
-.title-container{
-  border: 1px red solid;
+.title-container {
   width: fit-content;
   margin: 0;
   position: relative;
   top: 20px;
   left: 19px;
-}
-
-::ng-deep.cartelera app-cartelera .container-carrusel{
-  outline: 1px red solid;
 }
 
 
@@ -38,16 +33,113 @@
   .image-header-container {
     display: none;
   }
+
+  .filters {
+    width: 100%;
+    max-width: 533px;
+    outline: 1px blue solid;
+  }
+
+  #container-form-filter {
+    outline: 1px red solid;
+    width: 100%;
+  }
+
+  .form-filter {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+  }
+
+  .label-filters:nth-child(2),
+  .form-elemnts:nth-child(2) {
+    order: 2;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .body-home {
     padding: 25px;
   }
+
+  .filters {
+    width: 100%;
+    max-width: 533px;
+    outline: 1px blue solid;
+  }
+
+  #container-form-filter {
+    outline: 1px red solid;
+    width: 100%;
+  }
+
+  .form-filter {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+  }
+
+  /* Cambiar el orden de los elementos */
+  #label-ubications:nth-child(1) {
+    order: 1;
+  }
+
+  #select-ubications:nth-child(2) {
+    order: 4;
+  }
+
+  #label-name:nth-child(3) {
+    order: 2;
+  }
+
+  #input-name:nth-child(4) {
+    order: 5;
+  }
+
+  #div-spacer:nth-child(5) {
+    order: 3;
+  }
+
+  #button-form:nth-child(6) {
+    order: 6;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
   .body-home {
-    padding: 50px;
+    padding: 0 50px 50px 50px;
+  }
+
+  .form-filter {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+  }
+
+  /* Cambiar el orden de los elementos */
+  #label-ubications:nth-child(1) {
+    order: 1;
+  }
+
+  #select-ubications:nth-child(2) {
+    order: 4;
+  }
+
+  #label-name:nth-child(3) {
+    order: 2;
+  }
+
+  #input-name:nth-child(4) {
+    order: 5;
+  }
+
+  #div-spacer:nth-child(5) {
+    order: 3;
+  }
+
+  #button-form:nth-child(6) {
+    order: 6;
   }
 }
