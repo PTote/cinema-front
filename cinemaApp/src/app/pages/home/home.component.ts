@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EIdCine } from 'src/app/enum/idCine.enum';
+import { EIdCine } from 'src/app/enum/id-ubicationCine.enum';
 import { IMovieData, IUbicationsCinema } from 'src/app/models/interface-data.interface';
 import billboardData from '../../../assets/data/cartelera.json';
 import coomingSoonData from '../../../assets/data/proximamente.json';
