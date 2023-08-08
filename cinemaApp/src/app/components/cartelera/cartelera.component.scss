@@ -131,8 +131,10 @@ p {
   color: #fff
 }
 
-.carrusel-arrow:hover {
+.pre-btn:hover,
+.nxt-btn:hover {
   color: #B5BA03;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 425px) {
