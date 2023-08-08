@@ -1,31 +1,21 @@
 <div class="container-carrusel">
   <div class="pre-btn">
-    <div class="container-arrow">
-      <i
-        class="bi bi-arrow-left-short carrusel-arrow"
-        (click)="leftControl()"
-      ></i>
-    </div>
+    <i class="bi bi-arrow-left-circle-fill" (click)="leftControl()"></i>
   </div>
 
-  <div class="movies-container" id={{nameContainer}}>
-    <div class="movie-card" *ngFor="let movie of arrMovies">
-      <div class="movie-image">
-        <img [src]="movie.image" alt="movie.title" class="product-thumb" />
-        <button class="card-btn">Más información</button>
-      </div>
-      <div class="movie-info">
-        <h2 class="movie-title">{{ movie.title }}</h2>
+    <div class="movies-container" id="{{ nameContainer }}">
+      <div class="movie-card" *ngFor="let movie of arrMovies">
+        <div class="movie-image">
+          <img [src]="movie.image" alt="movie.title" class="product-thumb" />
+          <button class="card-btn">Más información</button>
+        </div>
+        <div class="movie-info">
+          <span class="movie-title">{{ movie.title }}</span>
+        </div>
       </div>
     </div>
-  </div>
 
   <div class="nxt-btn">
-    <div class="container-arrow">
-      <i
-        class="bi bi-arrow-right-short carrusel-arrow"
-        (click)="rightControl()"
-      ></i>
-    </div>
+  <i class="bi bi-arrow-right-circle-fill" (click)="rightControl()"></i>
   </div>
 </div>
