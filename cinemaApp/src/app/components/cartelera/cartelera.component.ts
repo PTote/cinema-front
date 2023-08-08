@@ -10,10 +10,12 @@ export class CarteleraComponent implements OnInit {
 
   @Input() arrMovies: IMovieData[] = [];
   @Input() nameContainer: string = '';
+  @Input() noMatches: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.noMatches);
   }
 
   leftControl() {
