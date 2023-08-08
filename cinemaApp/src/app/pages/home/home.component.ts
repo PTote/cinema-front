@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   showLoader: boolean = false;
   moviesLessFive: boolean = false;
   noMatches: boolean = false;
-  noMatchesMessage: string = 'No se han encontrado incidencias para ';
+  noMatchesMessage: string = '';
 
 
   constructor(
@@ -145,7 +145,7 @@ export class HomeComponent implements OnInit {
           }
 
           this.noMatches = true;
-          this.noMatchesMessage += ` ${value}`;
+          this.noMatchesMessage = `No se han encontrado incidencias para ${value}`;
 
         } else {
           const initUbication: number = this.searchForm.get('ubications')?.value;
