@@ -11,7 +11,12 @@
     <div class="filters">
       <h2>Búsqueda avanzada</h2>
       <div id="container-form-filter">
-        <form action="" class="form-filter">
+        <form
+          action=""
+          class="form-filter"
+          [formGroup]="searchForm"
+          (ngSubmit)="submitForm()"
+        >
           <label for="ubications" id="label-ubications"
             >Elige tu ubicación</label
           >
@@ -19,10 +24,8 @@
             name="ubications"
             id="select-ubications"
             class="form-elements select"
-            [(ngModel)]="cineUbication"
-            (change)="selectUbications()"
+            formControlName="ubications"
           >
-            <option value="">Selecciona una ubicación</option>
             <option *ngFor="let cine of cinemaData" [value]="cine.id">
               {{ cine.ubication }}
             </option>
@@ -32,7 +35,7 @@
             name="cine-name"
             id="select-cine"
             class="form-elements select"
-            [disabled]="cineNameActive"
+            formControlName="nameCine"
           >
             <option value="" disabled selected>Selecciona un cine</option>
             <option
@@ -48,28 +51,37 @@
             id="input-name"
             placeholder="Busca una película..."
             class="form-elements input"
+            formControlName="nameMovie"
           />
           <div id="div-spacer"></div>
-          <button type="submit" class="form-elements button" id="button-form">
-            Buscar
-          </button>
         </form>
       </div>
     </div>
 
-    <div class="cartelera">
-      <h2 class="title-container">En cartelera</h2>
-      <div class="cartelera-container">
+    <div class="loader" *ngIf="showLoader" >
+      <app-loader></app-loader>
+    </div>
+
+    <div class="cartelera" *ngIf="!showLoader">
+      <h2 class="title-container">{{ titleBillboard }}</h2>
+      <div [ngClass]="{
+        'cartelera-container': !moviesLessFive,
+        'cartelera-container-less' : moviesLessFive
+      }">
         <app-cartelera
           [arrMovies]="billboard"
           [nameContainer]="'billboardContainer'"
+          *ngIf="!noMatches"
         ></app-cartelera>
+        <h1 *ngIf="noMatches" class="noMatches">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          {{noMatchesMessage}}</h1>
       </div>
     </div>
 
-    <div class="cartelera" name="estrenos">
+    <div class="cartelera" name="estrenos" *ngIf="!showLoader">
       <h2 class="title-container">Próximamente</h2>
-      <div class="cartelera-container">
+      <div div class="cartelera-container">
         <app-cartelera
           [arrMovies]="coomingSoon"
           [nameContainer]="'coomingSoonContainer'"

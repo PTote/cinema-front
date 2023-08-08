@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AutomaticSliderComponent } from './components/automatic-slider/automatic-slider.component';
@@ -14,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { PromotionsComponent } from './pages/promotions/promotions.component';
 import { SessionComponent } from './pages/session/session.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,13 @@ import { SessionComponent } from './pages/session/session.component';
     ImageHeaderComponent,
     AutomaticSliderComponent,
     FooterComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

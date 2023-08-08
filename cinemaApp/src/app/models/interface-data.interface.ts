@@ -8,4 +8,5 @@ export interface IUbicationsCinema {
   id:            number;
   ubication:     string;
   cinemaName: string[];
+  movies: string[];
 }
