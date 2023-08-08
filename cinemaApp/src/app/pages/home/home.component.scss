@@ -12,18 +12,6 @@
   width: 100%;
 }
 
-.cartelera-container {
-  padding: 20px;
-}
-
-.title-container {
-  width: fit-content;
-  margin-bottom: 15px;
-  position: relative;
-  top: 20px;
-  left: 19px;
-}
-
 #button-form {
   width: 100px;
   height: 25px;
@@ -67,6 +55,18 @@
     padding: 0 10px 0 10px;
   }
 
+  .cartelera {
+    // outline: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .cartelera-container {
+    padding: 0;
+  }
+
+
   .image-header-container {
     display: none;
   }
@@ -104,9 +104,13 @@
     order: 2;
   }
 
-  .title-container{
+  .title-container {
+    margin-top: 10px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
+    // outline: 1px blue solid;
+    align-self: center;
+    text-align: center;
   }
 
 }
