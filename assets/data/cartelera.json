@@ -33,5 +33,10 @@
     "id": 7,
     "title": "Wolwerine",
     "image": "assets/images/wolwerine.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Alphadog",
+    "image": "assets/images/alphadog.jpg"
   }
 ]

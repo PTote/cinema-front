@@ -7,6 +7,16 @@
       "Capitols",
       "Oakland",
       "Américas"
+    ],
+    "movies" : [
+      "Spider-Man",
+      "Batman",
+      "Dogtown Boys",
+      "The Doors",
+      "The Exorcist",
+      "Trainspotting",
+      "Wolwerine",
+      "Alphadog"
     ]
   },
   {
@@ -17,6 +27,12 @@
       "MetroXela",
       "Portales Xela",
       "Américas Xela"
+    ],
+    "movies" : [
+      "Spider-Man",
+      "Batman",
+      "The Exorcist",
+      "Wolwerine"
     ]
   },
   {
@@ -26,6 +42,12 @@
       "Tikal Cine",
       "Flores Cine",
       "Poptún Cine"
+    ],
+    "movies" : [
+      "Spider-Man",
+      "Batman",
+      "The Doors",
+      "Trainspotting"
     ]
   }
 ]
